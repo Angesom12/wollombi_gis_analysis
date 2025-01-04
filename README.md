@@ -1,8 +1,7 @@
-# wollombi_gis_analysis
-This repository provides Python tools for analyzing GIS data of the Wollombi region, focusing on channel networks, gauging stations, and DEMs (10m/30m). It processes vector/raster data, automates visualization, and ensures data integrity. Technologies include GeoPandas, Rasterio, GDAL, and more. See README.md for details.
-
+Wollombi GIS Analysis
+This repository contains GIS analysis tools for processing and analyzing Wollombi channel line data, gauging stations, and Digital Elevation Models (DEMs).
 Project Structure
-
+Copy
 wollombi_gis_analysis/
 │
 ├── data/
@@ -23,39 +22,31 @@ wollombi_gis_analysis/
 │   └── stats/             # Statistical outputs
 │
 └── tests/                 # Unit tests
-
-
 Setup
-
-1.Clone the repository
-2.Create virtual environment:
-
+1.	Clone the repository
+2.	Create virtual environment:
+bash
+Copy
 python -m venv venv
 venv\Scripts\activate
-
-3. Install requirements:
-
-   pip install -r requirements.txt
-
-
+3.	Install requirements:
+bash
+Copy
+pip install -r requirements.txt
 Data Required
 Place the following RAR files in the data/raw directory:
-
-wollombi_channelline.rar
-wollombi_gauging.rar
-wollombi_DEM_10m.rar
-wollombi_DEM_30m.rar
-
+•	wollombi_channelline.rar
+•	wollombi_gauging.rar
+•	wollombi_DEM_10m.rar
+•	wollombi_DEM_30m.rar
 Usage
-
-Place raw data files in data/raw/
-Run the analysis:
-
+1.	Place raw data files in data/raw/
+2.	Run the analysis:
+bash
+Copy
 python src/main.py
-
-
 Outputs
+•	Vector data visualization: output/figures/vector_data.png
+•	DEM comparison: output/figures/dem_comparison.png
+•	Processed data: output/stats/gauging_stations_with_elevation.gpkg
 
-Vector data visualization: output/figures/vector_data.png
-DEM comparison: output/figures/dem_comparison.png
-Processed data: output/stats/gauging_stations_with_elevation.gpkg
